@@ -11,10 +11,11 @@ describe("Calculator", () => {
   // })
 
     // Do the number buttons update the display of the running total?
-    it('should have number buttons that update the display of the running total')
+    it('should have number buttons that update the display of the running total', () => {
     cy.get('#number1').click();
     cy.get('#number9').click();
     cy.get('.display').should('contain', '19')
+  })
 
 
   // Do the arithmetical operations update the display with the result of the operation?
